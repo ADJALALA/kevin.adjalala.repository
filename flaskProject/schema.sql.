@@ -1,0 +1,31 @@
+import sqlite3
+
+def creata_table()
+    conn = sqlite3.connect('database.db')
+    cur = conn.cursor()
+    cur.execute("DROP TABLE IF EXISTS User")
+    cur.execute("""CREATE TABLE user(
+        id INTEGER,
+        username TEXT,
+        email TEXT,
+        password TEXT
+        )""")
+
+    conn.close
+
+creata_table()
+
+    conn = sqlite3.connect('database.db')
+    cur = conn.cursor()
+    cur.execute("""INSERT INTO User(id, nom, email, passwword) 
+       VALUES(1, DUPONT, dupont@exemple.com, password)""")
+    conn.commit()
+
+    res = cur.execute("SELECT * FROM User)
+    print(res.fetchall())
+
+
+
+
+
+    conn.close
