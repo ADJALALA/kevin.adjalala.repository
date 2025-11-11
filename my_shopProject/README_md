@@ -1,0 +1,49 @@
+My Shop - Projet de boutique en ligne
+📋 Description
+My Shop est une application web complète de e-commerce développée en PHP avec Tailwind CSS. Le projet comprend un système d’authentification, une interface d’administration complète, et une boutique en ligne responsive.
+✨ Fonctionnalités implémentées
+Step 1 : Authentification ✅
+	•	✅ Inscription utilisateur (signup.php)
+	•	✅ Connexion utilisateur (signin.php)
+	•	✅ Déconnexion sécurisée (logout.php)
+	•	✅ Stockage sécurisé des mots de passe avec bcrypt
+	•	✅ Validation des formulaires avec messages d’erreur
+	•	✅ Gestion des sessions
+Step 2 : Interface d’administration ✅
+	•	✅ Tableau de bord administrateur (admin.php)
+	•	✅ Gestion des utilisateurs (liste, modification, suppression)
+	•	✅ Attribution des droits administrateur
+	•	✅ Gestion des produits (CRUD complet)
+	•	✅ Upload d’images pour les produits
+	•	✅ Protection des pages admin (middleware)
+Step 3 : La boutique ✅
+	•	✅ Affichage des produits sur l’accueil (index.php)
+	•	✅ Page détail produit (product.php)
+	•	✅ Design responsive (mobile-first)
+	•	✅ Pagination des produits
+	•	✅ Interface moderne avec Tailwind CSS
+	•	✅ Optimisation SEO (meta tags, descriptions)
+Step 4 : Catégories ✅
+	•	✅ Système de catégories hiérarchiques
+	•	✅ Catégories imbriquées (multi-niveaux)
+	•	✅ Relations one-to-many dans la base de données
+	•	✅ Gestion CRUD des catégories
+Step 5 : Barre de recherche ✅
+	•	✅ Recherche par nom de produit
+	•	✅ Filtrage par catégorie
+	•	✅ Filtrage par prix (min/max)
+	•	✅ Tri multiple (nom, prix, date)
+	•	✅ Ordre croissant/décroissant
+🛠️ Technologies utilisées
+	•	Backend : PHP 7.4+ (POO)
+	•	Base de données : MySQL avec PDO
+	•	Frontend : HTML5, Tailwind CSS
+	•	Sécurité : bcrypt, sessions PHP, prepared statements
+	•	Architecture : MVC simplifié avec classes
+📦 Installation
+Prérequis
+	•	PHP 7.4 ou supérieur
+	•	MySQL 5.7 ou supérieur
+	•	Serveur web (Apache/Nginx) ou PHP built-in server
+Étapes d’installation
+	1.	Cloner le projet
