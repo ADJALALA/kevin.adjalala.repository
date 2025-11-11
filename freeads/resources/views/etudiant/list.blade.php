@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -11,4 +11,4 @@
       Hello world!
     </h1>
   </body>
-</html>
+</html> -->

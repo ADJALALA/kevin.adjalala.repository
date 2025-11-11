@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Model;
 use App\Models\Ads;
-
+use App\Models\Category;
 
 class CategoryController extends Controller
 {

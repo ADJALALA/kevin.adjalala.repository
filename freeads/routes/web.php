@@ -36,7 +36,7 @@ Route::get('/edit/{ad}', [adsController::class, 'edit'])->name('ads.editAd');
 //formulaire pour aller vers le controller pour update element
 Route::put('/update/{ad}', [adsController::class, 'update'])->name('ads.update');
 
-//formulaire pour aller vers le controller pour update element
+//formulaire pour aller vers le controller pour delete element
 Route::delete('/destroy/{ad}', [adsController::class, 'destroy'])->name('ads.destroy');
 
 
@@ -69,7 +69,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/users', [UserController::class, 'index'])->name('admin.users.index');
         Route::get('/users/{user}', [UserController::class, 'showUser'])->name('admin.users.show');
         Route::put('/users/{user}', [UserController::class, 'updateUser'])->name('admin.users.update');
-        Route::delete('/users/{user}', [UserController::class, 'deleteUser'])->name('admin.users.delete');
+        Route::delete('/users/{user}', [UserController::class, 'deleteUser'])->name('admin.users.delete'); 
         Route::resource('categories', CategoryController::class);
     });
 });
