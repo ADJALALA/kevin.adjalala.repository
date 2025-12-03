@@ -11,6 +11,6 @@ function my_password_hash($password){
 function my_password_verify($password, $salt, $hash){
     return md5($salt.$password) === $hash;
 }
-$arr = my_password_hash("toto");
-var_dump(my_password_verify("toto", $arr["salt"], $arr["hash"]));
+// $arr = my_password_hash("toto");
+// var_dump(my_password_verify("toto", $arr["salt"], $arr["hash"]));
 ?>

@@ -91,7 +91,7 @@
 
             <!-- Section des annonces -->
             <main class="lg:w-3/4">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Annonce 1 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img src="/img/nitendo.jpg" alt="" />
