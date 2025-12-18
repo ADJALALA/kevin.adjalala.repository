@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS "Number of movies that starts with" FROM movies WHERE title LIKE 'eX%';

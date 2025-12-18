@@ -1,0 +1,1 @@
+SELECT Title, Summary FROM movies ORDER BY title ASC;

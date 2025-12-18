@@ -1,0 +1,1 @@
+SELECT rooms_numbers AS "Room numbers", name AS "names" FROM rooms WHERE seats IS NOT NULL AND floor <> 1;
