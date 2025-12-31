@@ -1,0 +1,1 @@
+SELECT SUM(prod_year) AS "Sum prod_year" FROM movies WHERE prod_year <> 0;

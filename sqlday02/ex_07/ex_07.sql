@@ -1,0 +1,1 @@
+SELECT title AS "Movie title" FEOM movies WHERE LEFT(title, 1) BETWEEN 'O' AND 'T' ORDER BY title ASC;

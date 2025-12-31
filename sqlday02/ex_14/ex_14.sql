@@ -1,0 +1,1 @@
+UPDATE subscriptions(name) VALUES('Premium++') ORDER BY id DESC LIMIT 1;
