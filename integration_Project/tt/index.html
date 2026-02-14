@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src=".js"></script>
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <nav class="flex item-center justify-between mx-8 py-5 ">
+            <div class="flex gap-8">
+                <img src="image/Logo.png" alt="" height="50px" width="50px">
+                <ul class="flex gap-8">
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">HOME</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">SHOP</a></li>
+                    <li><a href="#"class="text-gray-700 hover:text-blue-600 font-medium">MAGAZINE</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-8">
+                <img src="image/Cart Button.png" alt="" >
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">LOGIN</a>
+            </div>
+        </nav>
+        <div class="flex-1 mx-6 hidden md:block">
+          <div class="flex items-center gap-8 mx-5">
+            <img src="image/Search.png" alt="recherche" >
+            
+            <form action="#" class="flex border-b w-full">
+              <input type="text"placeholder="living room"class="w-full py-2 outline-none text-sm"/>
+              <div class="flex gap-2">
+
+                <span class="text-xs text-gray-400 ml-2 whitespace-nowrap">
+                  Powered by Algolia
+                </span>
+                <img src="image/Sajari Logo.png" alt="" width="px" height="">
+              </div>
+            </form>
+            <select>
+             <option selected>Best match</option>
+             <option value="1">Popular</option>
+             <option value="2">Products</option>
+             <option value="3">Category</option>
+           </select>
+          </div>
+      </div>
+    </header>
+    <!-- content -->
+     <div class="flex px-8 py-8 gap-10 ">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <aside class="w-full h-full">
+          <h3 class="text-sm text-gray-400 mb-6">FILTER BY</h3>
+          <div class="space-y-20">
+            <select>
+              <option selected>Collection</option>
+              <option>All</option>
+              <option>Sofas</option>
+              <option>Chairs</option>
+              <option>Tables</option>
+            </select>
+            <select >
+              <option selected>Color</option>
+              <option value="1">Red</option>
+              <option value="1">Blue</option>
+              <option value="1">Green</option>
+            </select>
+            <select>
+              <option selected>Category</option>
+              <option>All</option>
+              <option>Living room</option>
+              <option>Office</option>
+            </select>
+          </div>
+          <div class="mt-3">
+            <p class="font-medium mb-2">Price Range</p>
+            <input type="range" class="w-full">
+            <div class="flex justify-between text-sm mt-1">
+              <span>$0</span>
+              <span>$10,000+</span>
+            </div>
+          </div>
+        </aside>
+      <div>
+        <img src="image/image7.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Coombes</h3>
+            <p class="text-xs text-gray-500">LOUNGE</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="image/image8.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Nille</h3>
+            <p class="text-xs text-gray-500">ARMCI</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="image/image 8.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+     </div>
+     </div>
+     <div id="product" class="md:hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-5">
+      <div>
+        <img src="image/img4.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="image/img3.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="image/img2.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+            
+          
+      </div>
+      <div>
+        <img src="image/img6.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-5">
+      <div>
+        <img src="image/img4.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="image/img3.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="image/img2.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+            
+          
+      </div>
+      <div>
+        <img src="image/img6.jpg" alt="" class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+        <div class="mt-3 flex justify-between">
+          <div>
+            <h3 class="font-semibold">Keeve Set</h3>
+            <p class="text-xs text-gray-500">TABLE & CHAIRS</p>
+          </div>
+          <p class="font-medium">$2,600</p>
+        </div>
+        <div class="flex justify-between item-center mt-3">
+          <p class="flex gap-1">
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star - On.png" alt=""></span>
+            <span><img src="image/Star.png" alt=""></span>
+          </p>
+          <img src="image/Cart Button.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pagination -->
+    <div class="flex item-center mx-5 p-5 mt-10 gap-6">
+      <a href="#">&laquo;</a>
+      <a href="#" class="bg bg-gray-800 text-gray-100 px-3 py-1 rounded">1</a>
+      <a href="#product" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">2</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">3</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">4</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">5</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">6</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">7</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">8</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">9</a>
+      <a href="#" class="border border-gray-900 text-gray-900 px-3 py-1 rounded">10</a>
+      <a href="#">&raquo;</a>
+    </div>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
+
+</head>
+

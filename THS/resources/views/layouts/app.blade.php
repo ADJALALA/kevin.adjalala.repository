@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'SOBEBRA Dépôt')</title>
+    <title>@yield('title', 'TRI-HORIZONS SARK Dépôt')</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     @stack('styles')
@@ -18,7 +18,7 @@
                         <i class="fas fa-beer text-yellow-500 text-3xl"></i>
                     </div>
                     <div>
-                        <h1 class="text-2xl font-bold">SOBEBRA</h1>
+                        <h1 class="text-2xl font-bold">TRI-HORIZONS SAEL</h1>
                         <p class="text-yellow-100 text-sm">Dépôt de Vente</p>
                     </div>
                 </div>
@@ -55,6 +55,12 @@
                     <i class="fas fa-history"></i>
                     Historique Ventes
                 </a>
+                 @if(Auth::user()->isAdmin())
+                    <a href="{{ route('users.index') }}" class="flex items-center gap-2 px-6 py-4 font-medium transition {{ request()->routeIs('utilisateurs.*') ? 'text-yellow-600 border-b-2 border-yellow-600' : 'text-gray-600 hover:text-yellow-600' }}">
+                        <i class="fas fa-users"></i>
+                        Utilisateurs
+                    </a>
+                @endif
             </div>
         </div>
     </nav>

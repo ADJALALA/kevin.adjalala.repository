@@ -13,13 +13,27 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Admin SOBEBRA',
             'email' => 'admin@sobebra.com',
-            'password' => bcrypt('password')
+            'password' => bcrypt('password'),
+            'role' => 'admin',
         ]);
         User::create([
             'name' => 'Magasinier Principal',
             'email' => 'magasinier@sobebra.com',
             'password' => bcrypt('password'),
-            // 'role' => 'magasinier',
+            'role' => 'magasinier',
+        ]);
+        User::create([
+            'name' => 'Livreur 1',
+            'email' => 'livreur@sobebra.com',
+            'password' => bcrypt('password'),
+            'role' => 'livreur',
+        ]);
+
+        User::create([
+            'name' => 'Vendeur 1',
+            'email' => 'vendeur@sobebra.com',
+            'password' => bcrypt('password'),
+            'role' => 'vendeur',
         ]);
 
         $categories = [

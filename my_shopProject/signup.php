@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
     $confirmPassword = $_POST['confirm_password'] ?? '';
     
+    
     // Validation
     if (empty($username)) {
         $errors[] = "Le nom d'utilisateur est requis.";
